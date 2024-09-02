@@ -1,146 +1,64 @@
 {
   "qa": [
-    
+    {
+      "question": "What is the difference between '==' and '===' in JavaScript?",
+      "answer": "'==' checks for equality with type coercion, while '===' checks for equality without type coercion (strict equality)."
+    },
+    {
+      "question": "What is a closure in JavaScript?",
+      "answer": "A closure is a function that retains access to its lexical scope even after the function has finished executing."
+    },
+    {
+      "question": "Explain event delegation in JavaScript.",
+      "answer": "Event delegation involves using a single event listener on a parent element to manage events for multiple child elements, improving performance and memory usage."
+    },
+    {
+      "question": "What are JavaScript promises and how do they work?",
+      "answer": "Promises represent the eventual completion (or failure) of an asynchronous operation and its resulting value. They have three states: pending, fulfilled, and rejected."
+    },
+    {
+      "question": "What is the 'this' keyword in JavaScript?",
+      "answer": "'this' refers to the object that is currently executing the code. Its value depends on the context in which it is used (e.g., in a method, a constructor, or a global scope)."
+    },
     {
       "question": "What is JSX in React?",
-      "answer": "JSX (JavaScript XML) is a syntax extension that allows you to write HTML-like code within JavaScript, which React transforms into JavaScript objects."
-    },
-   
-    {
-      "question": "What are React hooks and name a few commonly used hooks?",
-      "answer": "React hooks are functions that let you use state and other React features without writing a class. Common hooks include `useState`, `useEffect`, and `useContext`."
+      "answer": "JSX (JavaScript XML) is a syntax extension that allows you to write HTML-like code within JavaScript, which React transforms into JavaScript."
     },
     {
-      "question": "How does the `useEffect` hook work?",
-      "answer": "The `useEffect` hook allows you to perform side effects in function components. It runs after every render, and you can specify dependencies to control when it runs."
+      "question": "What are React hooks?",
+      "answer": "React hooks are functions that let you use state and other React features in functional components."
     },
     {
-      "question": "What is the Virtual DOM and how does React use it?",
-      "answer": "The Virtual DOM is an in-memory representation of the actual DOM. React uses it to optimize updates by comparing the Virtual DOM to the actual DOM and applying minimal changes."
+      "question": "What is the Virtual DOM in React?",
+      "answer": "The Virtual DOM is a lightweight copy of the actual DOM. React uses it to efficiently update the UI by comparing the virtual DOM with the real DOM and only applying the necessary changes."
     },
     {
-      "question": "Explain the concept of React context.",
-      "answer": "React context provides a way to pass data through the component tree without having to pass props down manually at every level."
+      "question": "What is a pure function in JavaScript?",
+      "answer": "A pure function is a function that always returns the same output for the same input and has no side effects (it doesn't alter any external state)."
     },
     {
-      "question": "What are controlled components in React?",
-      "answer": "Controlled components are form elements whose value is controlled by React state, allowing for more predictable and easier management of form inputs."
+      "question": "What is the purpose of `useState` in React?",
+      "answer": "`useState` is a hook that allows you to add state to functional components in React."
     },
     {
-      "question": "What is the purpose of `key` in React lists?",
-      "answer": "The `key` prop helps React identify which items have changed, are added, or are removed, improving performance by optimizing the re-rendering of lists."
-    },
-    {
-      "question": "How do you handle errors in React components?",
-      "answer": "Error boundaries are special components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI."
-    },
-    {
-      "question": "What is React Router and how is it used?",
-      "answer": "React Router is a library for handling routing in React applications. It allows you to define multiple routes in your app and navigate between them."
-    },
-    {
-      "question": "How does React handle component lifecycle methods in functional components?",
-      "answer": "Functional components use hooks like `useEffect` to handle lifecycle events that were previously managed with lifecycle methods in class components."
-    },
-    {
-      "question": "What is server-side rendering (SSR) and how does it benefit React apps?",
-      "answer": "SSR is the process of rendering React components on the server rather than in the browser, improving initial page load performance and SEO."
-    },
-    {
-      "question": "Explain the concept of React reconciliation.",
-      "answer": "Reconciliation is the process by which React updates the DOM efficiently by comparing the new virtual DOM with the previous one and applying necessary changes."
-    },
-    {
-      "question": "What are React’s “keys” and why are they important?",
-      "answer": "Keys are unique identifiers used by React to keep track of elements in lists. They help React efficiently update and reconcile lists of elements."
-    },
-    {
-      "question": "What is `React.memo`?",
-      "answer": "`React.memo` is a higher-order component that memoizes a component’s output to prevent unnecessary re-renders, improving performance for functional components."
-    },
-    {
-      "question": "What is Redux and how does it integrate with React?",
-      "answer": "Redux is a state management library that helps manage global state in a predictable way. It integrates with React using the `react-redux` library to provide state and dispatch actions to components."
-    },
-    {
-      "question": "Explain the concept of “lifting state up” in React.",
-      "answer": "Lifting state up involves moving state management to a common ancestor component to share state between child components, ensuring consistency and data flow."
-    },
-    {
-      "question": "What is a “pure component” in React?",
-      "answer": "A pure component is a component that only re-renders when its props or state change. React’s `PureComponent` automatically implements a shallow comparison of props and state."
-    },
-    {
-      "question": "How do you optimize performance in React applications?",
-      "answer": "Performance can be optimized using techniques like memoization (`React.memo`, `useMemo`), code splitting, lazy loading, avoiding unnecessary re-renders, and efficient state management."
-    },
-    {
-      "question": "What is the `useCallback` hook used for?",
-      "answer": "The `useCallback` hook memoizes a callback function so that it doesn’t get recreated on every render, which helps in optimizing performance, especially with dependency arrays."
-    },
-    {
-      "question": "What are React’s “error boundaries”?",
-      "answer": "Error boundaries are components that catch JavaScript errors anywhere in their child component tree, log the errors, and display a fallback UI."
-    },
-    {
-      "question": "What is the `useImperativeHandle` hook and how is it used?",
-      "answer": "The `useImperativeHandle` hook customizes the instance value that is exposed when using `ref` with `forwardRef`, allowing you to control the values that a parent component can access."
-    },
-    {
-      "question": "What is React’s Suspense and how is it used?",
-      "answer": "React Suspense allows you to “suspend” rendering until certain conditions are met, such as loading data or components. It works with lazy-loaded components and data fetching."
-    },
-    {
-      "question": "What is the role of `ReactDOM.render`?",
-      "answer": "`ReactDOM.render` is used to render a React element into the DOM. It takes a React element and a DOM container as arguments and updates the DOM."
-    },
-    {
-      "question": "How do you handle form validation in React?",
-      "answer": "Form validation can be handled using controlled components with validation libraries like Yup and Formik, or by manually managing form state and validation."
-    },
-    {
-      "question": "What is the difference between “controlled” and “uncontrolled” components in React?",
-      "answer": "Controlled components have their state managed by React, while uncontrolled components manage their own state and use refs to access values."
-    },
-    {
-      "question": "What are the benefits of using TypeScript with React?",
-      "answer": "TypeScript provides type safety, better code completion, and error checking, which can improve the development experience and code maintainability in React applications."
-    },
-    {
-      "question": "What is the purpose of the `React.StrictMode` component?",
-      "answer": "`React.StrictMode` is a tool for identifying potential problems in an application. It activates additional checks and warnings for its descendants."
-    },
-    {
-      "question": "What is a “render prop” in React?",
-      "answer": "A render prop is a technique for sharing code between React components using a function that returns a React element, allowing the component to dynamically render content."
-    },
-    {
-      "question": "What is the `useLayoutEffect` hook and how does it differ from `useEffect`?",
-      "answer": "`useLayoutEffect` runs synchronously after all DOM mutations, before the browser has a chance to paint, whereas `useEffect` runs asynchronously after paint."
-    },
-    {
-      "question": "What is “code splitting” and how can it be implemented in React?",
-      "answer": "Code splitting is the practice of dividing your code into smaller bundles that can be loaded on demand, improving performance. In React, it can be implemented using dynamic imports with `React.lazy` and `Suspense`."
-    },
-    {
-      "question": "What is the purpose of `useContext` in React?",
-      "answer": "The `useContext` hook allows you to access context values directly from functional components without needing to use the `Context.Consumer` component."
+      "question": "What is the difference between `props` and `state` in React?",
+      "answer": "`props` are inputs to a component that are passed down from a parent component, while `state` is managed within the component and can change over time."
     },
     {
       "question": "How does React handle updates to state and props?",
       "answer": "React schedules updates and efficiently reconciles the changes by using a virtual DOM to compare previous and current states and only updating what has changed."
     },
     {
-      "question": "What is the `useReducer` hook and how is it used?",
-      "answer": "The `useReducer` hook is an alternative to `useState` for managing complex state logic in functional components, using a reducer function to handle state updates."
+      "question": "What is the `useEffect` hook used for in React?",
+      "answer": "`useEffect` is used to handle side effects in functional components, such as fetching data or directly interacting with the DOM."
     },
     {
-      "question": "What is the `useRef` hook used for in React?",
-      "answer": "The `useRef` hook returns a mutable ref object whose `.current` property is initialized with the passed argument. It is commonly used to access DOM elements or store mutable values."
+      "question": "What is the `useContext` hook in React?",
+      "answer": "`useContext` allows you to access context values directly from functional components without needing to use the `Context.Consumer` component."
     },
     {
-      "question": "What are React Portals and when should they be used?",
-      "answer": "React Portals provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. They are useful for modals, tooltips, and overlays."
+      "question": "What is `event.preventDefault()` in JavaScript?",
+      "answer": "`event.preventDefault()` is a method that stops the default action of an element from happening, such as preventing a form submission."
     }
   ]
 }
