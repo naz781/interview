@@ -1,33 +1,6 @@
 {
   "qa": [
-    {
-      "question": "Explain event delegation in JavaScript.",
-      "answer": "Event delegation involves using a single event listener on a parent element to manage events for multiple child elements, improving performance and memory usage."
-    },
-    {
-      "question": "What is a closure in JavaScript?",
-      "answer": "A closure is a function that retains access to its lexical scope even after the function has finished executing."
-    },
-    {
-      "question": "What are JavaScript promises and how do they work?",
-      "answer": "Promises represent the eventual completion (or failure) of an asynchronous operation and its resulting value. They have three states: pending, fulfilled, and rejected."
-    },
-    {
-      "question": "What is the `this` keyword in JavaScript?",
-      "answer": "`this` refers to the object that is currently executing the code. Its value depends on the context in which it is used (e.g., in a method, a constructor, or a global scope)."
-    },
-    {
-      "question": "What is a higher-order function?",
-      "answer": "A higher-order function is a function that takes another function as an argument or returns a function as a result."
-    },
-    {
-      "question": "Explain the concept of prototypal inheritance in JavaScript.",
-      "answer": "Prototypal inheritance allows objects to inherit properties and methods from other objects through their prototype chain."
-    },
-    {
-      "question": "What is the event loop in JavaScript?",
-      "answer": "The event loop is a mechanism that allows JavaScript to perform non-blocking I/O operations by offloading operations to the system and using a queue to handle asynchronous tasks."
-    },
+    
     {
       "question": "What is JSX in React?",
       "answer": "JSX (JavaScript XML) is a syntax extension that allows you to write HTML-like code within JavaScript, which React transforms into JavaScript objects."
@@ -156,10 +129,6 @@
     {
       "question": "How does React handle updates to state and props?",
       "answer": "React schedules updates and efficiently reconciles the changes by using a virtual DOM to compare previous and current states and only updating what has changed."
-    },
-    {
-      "question": "What are React fragments and when would you use them?",
-      "answer": "React fragments are used to group multiple elements without adding extra nodes to the DOM. They are useful when you need to return multiple elements from a component."
     },
     {
       "question": "What is the `useReducer` hook and how is it used?",
